@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import models.Task;
 import utils.DBUtil;
-
 /**
  * Servlet implementation class CreateServlet
  */
@@ -25,6 +24,7 @@ public class CreateServlet extends HttpServlet {
      */
     public CreateServlet() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
     /**
@@ -37,8 +37,6 @@ public class CreateServlet extends HttpServlet {
             em.getTransaction().begin();
 
             Task m = new Task();
-
-
 
             String content = request.getParameter("content");
             m.setContent(content);
